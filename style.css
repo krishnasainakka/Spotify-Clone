@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+}
+
+nav ul li{
+    padding:0 12px;
+}
+
+.search-bar{
+  position: absolute;
+  right: 100px;
+  width: 100%;
+  height:5%;
+  max-width: 500px;
+  background: rgba(255,255,255,0.2);
+  display: flex;
+  align-items: center;
+  border-radius: 60px;
+  padding: 10px 20px;
+}
+
+.search-bar input{
+  background: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  padding: 24px 20px;
+  font-size: 20px;
+  color:#cac7ff;
+}
+
+::placeholder{
+  color: white;
+}
+
+.search-bar button img{
+  width: 40px;
+  border-radius: 50%;
+}
+
+.search-bar button{
+  border: 0;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background: rgb(87, 221, 87);
+  cursor: pointer;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight:bolder;
+    font-size:1.3rem;
+}
+
+.brand img{
+    height:44px;
+    padding:0 8px;
+}
+
+.container{
+    min-height: 72vh;
+    background-color: black;
+    color: white;
+    border: 3px solid red;
+    /* font-family: ; */
+    display: flex;
+    margin: 20px auto;
+    width:93%;
+    padding: 30px;
+    /* background-image: url(); */
+
+}
+
+.bottom{
+    position: sticky;
+    height:130px;
+    background-color: black;
+    color: white;
+    bottom:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 5;
+}
+
+.icons{
+    margin-top: 14px;
+}
+
+.icons i{
+    cursor: pointer;
+}
+
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+}
+
+#playlist {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.songList{
+    border: 3px solid white;
+    background-color: #030e22;
+    width: 33vw;
+}
+
+.songItemContainer{
+    margin-top: 50px;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    /* background-color: rgb(145, 137, 188); */
+    background-color: grey;
+    /* width: 80%; */
+    color: yellow;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+
+}
+
+.songItem img{
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+
+.songItem .songName {
+  display: inline-block;
+  text-align: left;
+  flex-grow: 1;
+}
+
+
+
+.timestamp{
+    margin: 0 23px;
+}
+
+.timestamp{
+    cursor: pointer;
+}
+
+
+
+.songInfo {
+  position: absolute;
+  left: 10vw;
+  bottom: 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: large;
+  font-style: bolder;
+}
+
+#masterSongImage {
+  order: 1;
+}
+
+#masterSongName {
+  order: 3;
+  margin-left: 10px; /* Add spacing between masterSongImage and masterSongName */
+}
+
+.songInfo #gif {
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+  order: 2;
+  margin-left: 10px; /* Add spacing between masterSongName and playing.gif */
+}
+
+.songBanner{
+    border: 3px solid white;
+    width: 60vw;
+    margin: 5px 30px;
+    background-color: #191414;
+}
+/*Trending*/
+
+.Trending{
+  /* border: 3px solid blue; */
+    height: fit-content;
+    margin: 25px 20px;
+}
+
+  .slider-container {
+    overflow: hidden;
+    /* width: 100%; */
+    /* background-color: yellow; */
+  }
+  
+  .slider {
+    /* background-color: red; */
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card {
+    width: 255px !important;
+    height: 370px !important;
+    margin: 10px;
+    /* background-color: rgb(45, 40, 40); */
+    background-color: rgb(16, 103, 103);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+  }
+  
+  .card-image {
+    flex: 1;
+    background-position: center;
+    padding: 10px;
+  }
+  
+  .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .card-content {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .card-title {
+    margin: 0;
+  }
+  
+  .play-button {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    left: 80px;
+    bottom: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      width: 200px;
+      height: 300px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .card {
+      width: 150px;
+      height: 250px;
+    }
+  }
+
+/*Artists*/
+  .Artists {
+    /* border: 3px solid blue; */
+    height: fit-content;
+    margin: 10px 20px;
+
+  }
+  
+  .artist-card {
+    width: 160px !important;
+    height: 200px !important;
+    margin: 10px;
+    background-color: rgb(184, 182, 182);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .artist-image {
+    flex: 1;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .artist-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+  }
+  
+  .artist-name {
+    padding: 10px;
+    color: #030e22;
+  }
+
+  #balu {
+    position: absolute;
+    bottom: 0; 
+  }
+  
+/*BREAK POINTS*/
+
+@media (max-width: 1190px){
+  .songList{
+    width: 40vw;
+  }
+  .songBanner {
+    width: 50vw;
+  }
+}
+
+@media (max-width: 950px) {
+  .search-bar {
+    max-width: 350px;
+  }
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .songList{
+    width: 80vw;
+    margin-bottom: 5rem;
+  }
+  .songBanner {
+    width: 80vw;
+    border: none;
+  }
+  .Trending {
+    border: 3px solid white;
+  }
+  .Artists {
+    border: 3px solid white;
+  }
+  .Trending h1,
+  .Artists h1 {
+    padding-left: 2rem;
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+  .songInfo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #masterSongName,
+  #gif {
+    order: 2;
+    margin-left: 0;
+    margin-top: -6px; /* Add spacing between masterSongName and playing.gif in mobile view */
+  }
+}
+
+@media (max-width: 780px){
+  .search-bar {
+    display: none;
+  }
+  
+}
+
+@media (max-width: 380px) {
+  .container {
+    padding-left: 10px;
+  }
+  
+}
+
+  
+  
+  

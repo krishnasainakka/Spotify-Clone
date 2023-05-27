@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spotify - Your favourite music is here</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- Link Swiper's CSS -->
+        <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper/swiper-bundle.min.css"
+      />
+
+      <!-- Swiper JS -->
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        </head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="logo.png" alt="Spotify"> Spotify</li>
+            <li>Home</li>
+            <li>About</li>
+            <div class="search-bar">
+              <input type="text" placeholder="Search.." />
+              <button type="submit"><img src="search-icon.jpg" alt="search-icon"></button>
+            </div>
+            
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="songList">
+            <h1 style="color:aqua" id="playlist"> Your PlayList</h1>
+            <div class="songItemContainer">
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Let me Love You</span>
+                    <span class="songlistplay"><span class="timestamp">05:34 <i id="0" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Let me Love You</span>
+                    <span class="songlistplay"><span class="timestamp">05:34 <i id="1" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Let me Love You</span>
+                    <span class="songlistplay"><span class="timestamp">05:34 <i id="2" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Let me Love You</span>
+                    <span class="songlistplay"><span class="timestamp">05:34 <i id="3" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Let me Love You</span>
+                    <span class="songlistplay"><span class="timestamp">05:34 <i id="4" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Let me Love You</span>
+                    <span class="songlistplay"><span class="timestamp">05:34 <i id="5" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Let me Love You</span>
+                    <span class="songlistplay"><span class="timestamp">05:34 <i id="6" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Let me Love You</span>
+                    <span class="songlistplay"><span class="timestamp">05:34 <i id="7" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Let me Love You</span>
+                    <span class="songlistplay"><span class="timestamp">05:34 <i id="8" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Let me Love You</span>
+                    <span class="songlistplay"><span class="timestamp">05:34 <i id="9" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+            </div>
+       </div>
+
+        <div class="songBanner">
+            <div class="Trending" >
+                <h1 style="color:aqua">Trending - 2023</h1>
+                <div class="slider-container swiper mySwiper" id="swiper1">
+                    <div class="slider swiper-wrapper">
+                      <div class="card swiper-slide">
+                        <div class="card-image">
+                          <img src="covers/1.jpg" alt="Card 1">
+                        </div>
+                        <div class="card-content">
+                          <h3 class="card-title">Jai Shri Ram-Adipurush</h3>
+                          <i id="0" class="far fa-3x fa-play-circle play-button" style="color:green"></i>
+                        </div>          
+                      </div>
+                      <div class="card swiper-slide">
+                        <div class="card-image">
+                          <img src="covers/2.jpg" alt="Card 2">
+                        </div>
+                        <div class="card-content">
+                          <h3 class="card-title" >Na Roja Nuvve-Kushi</h3>
+                          <i id="1" class="far fa-3x fa-play-circle play-button" style="color:green"></i>
+                        </div>
+                      </div>
+                      <div class="card swiper-slide">
+                        <div class="card-image">
+                          <img src="covers/3.jpg" alt="Card 3">
+                        </div>
+                        <div class="card-content">
+                          <h3 class="card-title">Krishna Trance- Karthikeya2</h3>
+                          <i id="2" class="far fa-3x fa-play-circle play-button" style="color:green"></i>
+                        </div>
+                      </div>
+                      <div class="card swiper-slide">
+                        <div class="card-image">
+                          <img src="covers/4.jpg" alt="Card 3">
+                        </div>
+                        <div class="card-content">
+                          <h3 class="card-title">Card 3</h3>
+                          <i id="3"class="far fa-3x fa-play-circle play-button" style="color:green"></i>
+                        </div>
+                      </div>
+                      <div class="card swiper-slide">
+                        <div class="card-image">
+                          <img src="covers/4.jpg" alt="Card 3">
+                        </div>
+                        <div class="card-content">
+                          <h3 class="card-title">Card 3</h3>
+                          <i id="4" class="far fa-3x fa-play-circle play-button" style="color:green"></i>
+                        </div>
+                      </div>
+                      <div class="card swiper-slide">
+                        <div class="card-image">
+                          <img src="covers/4.jpg" alt="Card 3">
+                        </div>
+                        <div class="card-content">
+                          <h3 class="card-title">Card 3</h3>
+                          <i id="5" class="far fa-3x fa-play-circle play-button" style="color:green"></i>
+                        </div>
+                      </div>
+                      <div class="card swiper-slide">
+                        <div class="card-image">
+                          <img src="covers/4.jpg" alt="Card 3">
+                        </div>
+                        <div class="card-content">
+                          <h3 class="card-title">Card 3</h3>
+                          <i id="6" class="far fa-3x fa-play-circle play-button" style="color:green"></i>
+                        </div>
+                      </div>
+                      <div class="card swiper-slide">
+                        <div class="card-image">
+                          <img src="covers/4.jpg" alt="Card 3">
+                        </div>
+                        <div class="card-content">
+                          <h3 class="card-title">Card 3</h3>
+                          <i id="7" class="far fa-3x fa-play-circle play-button" style="color:green"></i>
+                        </div>
+                      </div>
+                      <div class="card swiper-slide">
+                        <div class="card-image">
+                          <img src="covers/1.jpg" alt="Card 1">
+                        </div>
+                        <div class="card-content">
+                          <h3 class="card-title">Jai Shri Ram-Adipurush</h3>
+                          <i id="8" class="far fa-3x fa-play-circle play-button" style="color:green"></i>
+                        </div>
+                      </div>
+                      <div class="card swiper-slide">
+                        <div class="card-image">
+                          <img src="covers/1.jpg" alt="Card 1">
+                        </div>
+                        <div class="card-content">
+                          <h3 class="card-title">Jai Shri Ram-Adipurush</h3>
+                          <i id="9" class="far fa-3x fa-play-circle play-button" style="color:green"></i>
+                        </div>
+                      </div>
+                      <!-- Add more cards here -->
+                    </div>
+                  </div>
+            </div>
+
+            <div class="Artists">
+                <h1 style="color:aqua">Artists</h1>
+                <div class="slider-container swiper mySwiper" id="swiper2">
+                  <div class="slider swiper-wrapper">
+                    <div class="artist-card swiper-slide">
+                      <div class="artist-image">
+                        <img src="artists/Sid_sriram.jpg" alt="Card 1">
+                      </div>
+                      <!-- <div class="artist-name">
+                        <h3>Sid SriRam</h3>
+                      </div> -->
+                      <h3 class="artist-name">Sid SriRam</h3>
+
+                    </div>
+                    <div class="artist-card swiper-slide">
+                      <div class="artist-image">
+                        <img src="artists/dsp1.png" alt="Card 1">
+                      </div>
+                      <div class="artist-name">
+                        <h3>Devi Sri Prasad</h3>
+                      </div>
+                    </div>
+                    <div class="artist-card swiper-slide">
+                      <div class="artist-image">
+                        <img src="artists/Geeta-Maduri.jpg" alt="Card 1">
+                      </div>
+                      <div class="artist-name">
+                        <h3>Geeta Maduri</h3>
+                      </div>
+                    </div>
+                    <div class="artist-card swiper-slide">
+                      <div class="artist-image">
+                        <img src="artists/Harika-Narayan.jpg" alt="Card 1">
+                      </div>
+                      <div class="artist-name">
+                        <h3>Harika</h3>
+                      </div>
+                    </div>
+                    <div class="artist-card swiper-slide">
+                      <div class="artist-image">
+                        <img src="artists/Rahul-sipligunj.jpg" alt="Card 1">
+                      </div>
+                      <div class="artist-name">
+                        <h3>Rahul sipligunj</h3>
+                      </div>
+                    </div>
+                    <div class="artist-card swiper-slide">
+                      <div class="artist-image">
+                        <img src="artists/Thaman.jpg" alt="Card 1">
+                      </div>
+                      <div class="artist-name">
+                        <h3>SS Thaman</h3>
+                      </div>
+                    </div>
+                    <div class="artist-card swiper-slide">
+                      <div class="artist-image">
+                        <img src="artists/Mangali.jpg" alt="Card 1">
+                      </div>
+                      <div class="artist-name">
+                        <h3>Mangali</h3>
+                      </div>
+                    </div>
+                    <div class="artist-card swiper-slide">
+                      <div class="artist-image">
+                        <img src="artists/balu4.jpg" alt="Card 1">
+                      </div>
+                      <div class="artist-name" id="balu">
+                        <h3>Bala Subramanyam</h3>
+                      </div>
+                    </div>
+                    <div class="artist-card swiper-slide">
+                      <div class="artist-image">
+                        <img src="artists/anuprubens.jpg" alt="Card 1">
+                      </div>
+                      <div class="artist-name">
+                        <h3>Anup Rubens</h3>
+                      </div>
+                    </div>
+                    <div class="artist-card swiper-slide">
+                      <div class="artist-image">
+                        <img src="artists/anudeep.jpg" alt="Card 1">
+                      </div>
+                      <div class="artist-name">
+                        <h3>Anudeep</h3>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+        <div class="icons">
+            <!-- fontawesome icons -->
+            <i class="fas fa-3x fa-step-backward" id="previous"></i>
+            <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+            <i class="fas fa-3x fa-step-forward" id="next"></i> 
+        </div>
+        <div class="songInfo">
+            <span><img src="covers/1.jpg" width="45px" alt="1.jpg" id="masterSongImage"></span>
+            <img src="playing.gif" width="42px" alt="" id="gif"> <span id="masterSongName">Jai Shri Ram-Adipurush</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+</body>
+</html>
